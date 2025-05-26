@@ -1,0 +1,10 @@
+{
+  "database": {
+    "host": "prod-db.example.com",
+    "password": "SuperSecret123!",
+    "port": 3306
+  },
+  "api_key_parameter": "/aws/parameter/store/api_key",
+  "debug_mode": false,
+  "ssl_enabled": true
+}

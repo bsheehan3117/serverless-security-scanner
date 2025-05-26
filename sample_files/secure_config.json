@@ -1,0 +1,12 @@
+# No secrets exposed, SSL enabled, etcx.
+
+{
+  "database": {
+    "host": "prod-db.example.com",
+    "password_parameter": "/aws/parameter/store/db_password",
+    "port": 3306
+  },
+  "api_key_parameter": "/aws/parameter/store/api_key",
+  "debug_mode": false,
+  "ssl_enabled": true
+}
