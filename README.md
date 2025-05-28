@@ -14,7 +14,7 @@ Think of this security scanner as an automated security guard for your S3 bucket
 6. **Results logged** → Saves findings to CloudWatch
 7. **Lambda sleeps** → Waits for next file
 
-The beauty: No servers to manage, runs only when needed, costs almost nothing!
+No servers to manage, runs only when needed, inexpensive.
 
 ## Architecture
 S3 Bucket → S3 Event Trigger → Lambda Function → CloudWatch Logs
