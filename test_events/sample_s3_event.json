@@ -4,7 +4,7 @@
       "eventName": "ObjectCreated:Put",
       "s3": {
         "bucket": {
-          "name": "my-security-scanner-bucket-bsheehanmay25"
+          "name": "[Bucket name Here]"
         },
         "object": {
           "key": "sample_files/vulnerable_config.json",
