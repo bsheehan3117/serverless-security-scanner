@@ -1,0 +1,18 @@
+{
+  "Records": [
+    {
+      "eventName": "ObjectCreated:Put",
+      "s3": {
+        "bucket": {
+          "name": "my-security-scanner-bucket-bsheehanmay25"
+        },
+        "object": {
+          "key": "sample_files/vulnerable_config.json",
+          "size": 245
+        }
+      },
+      "eventTime": "2024-05-25T12:00:00.000Z",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}
