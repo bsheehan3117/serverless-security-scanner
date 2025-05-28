@@ -1,6 +1,20 @@
 # Serverless Security Scanner
 
-An AWS Lambda-based security scanner that automatically detects vulnerabilities in configuration files uploaded to S3. This project explores serverless architecture and cloud security automation using AWS services.
+An AWS Lambda-based security scanner that automatically detects vulnerabilities in configuration files uploaded to S3. This project explores serverless architecture and cloud security automation using AWS services.  Current scope limited to json files, easily extensible.
+
+## Simple Explanation
+
+Think of this security scanner as an automated security guard for your S3 bucket:
+
+1. **You upload a config file** → S3 bucket receives it
+2. **S3 alerts Lambda** → "New file arrived"
+3. **Lambda wakes up** → Downloads and reads the file
+4. **Security check** → Scans for passwords, weak settings, etc.
+5. **Alert generated** → Creates report of any problems found
+6. **Results logged** → Saves findings to CloudWatch
+7. **Lambda sleeps** → Waits for next file
+
+The beauty: No servers to manage, runs only when needed, costs almost nothing!
 
 ## Architecture
 S3 Bucket → S3 Event Trigger → Lambda Function → CloudWatch Logs
